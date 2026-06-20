@@ -1,6 +1,7 @@
 <?php
 $host = 'localhost';         
-$db_name = 'suretrade_db'; $username = 'root';
+$db_name = 'suretrade_db'; 
+$username = 'root';
 $password = '';
 
 try {
