@@ -1,8 +1,8 @@
 <?php
-$host = 'localhost';         
-$db_name = 'suretrade_db'; 
-$username = 'root';
-$password = '';
+$host = 'sql308.infinityfree.com';         
+$db_name = 'if0_42227923_suretrade'; 
+$username = 'if0_42227923';
+$password = 'PAssWORD123';
 
 try {
     $conn = new PDO("mysql:host=" . $host . ";dbname=" . $db_name . ";charset=utf8", $username, $password);
