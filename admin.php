@@ -14,21 +14,18 @@ if (isset($_GET['action']) && $_GET['action'] === 'logout') {
     exit();
 }
 
-// Handle Delete
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action_delete_listing'])) {
     $stmt = $conn->prepare("DELETE FROM listings WHERE id = ?");
     $stmt->execute([intval($_POST['listing_id'])]);
     header("Location: admin.php?msg=deleted"); exit();
 }
 
-// Handle Update Listing
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action_update_listing'])) {
     $stmt = $conn->prepare("UPDATE listings SET title = ?, price = ?, category = ? WHERE id = ?");
     $stmt->execute([$_POST['title'], $_POST['price'], $_POST['category'], $_POST['listing_id']]);
     header("Location: admin.php?msg=updated"); exit();
 }
 
-// Handle Update User
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action_update_user'])) {
     $stmt = $conn->prepare("UPDATE users SET first_name = ?, last_name = ?, role = ? WHERE id = ?");
     $stmt->execute([$_POST['fname'], $_POST['lname'], $_POST['role'], $_POST['user_id']]);
