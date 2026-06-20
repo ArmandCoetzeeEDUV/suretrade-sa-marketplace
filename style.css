@@ -1,4 +1,4 @@
-/* --- Global Styles --- */
+/* Global Styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -31,7 +31,7 @@ body {
     background: #005a38;
 }
 
-/* --- Login Page Styles --- */
+/* Login Page Styles */
 .page-login {
     display: flex;
     flex-direction: column;
@@ -171,7 +171,7 @@ body {
     margin-bottom: 0;
 }
 
-/* --- Admin Page Styles --- */
+/* Admin Page Styles */
 .page-admin .layout {
     display: flex;
     min-height: 100vh;
@@ -287,7 +287,7 @@ body {
     border: 1px solid #ddd;
 }
 
-/* --- Consumer Page Styles --- */
+/* Consumer Page Styles */
 * {
     box-sizing: border-box;
     margin: 0;
